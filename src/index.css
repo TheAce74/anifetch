@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@layer base {
+  body {
+    @apply text-sm md:text-base;
+  }
+}
+
+@layer utilities {
+  .trans-all {
+    @apply transition-all duration-300;
+  }
+
+  .flex-starter {
+    @apply flex items-center justify-between;
+  }
+}
